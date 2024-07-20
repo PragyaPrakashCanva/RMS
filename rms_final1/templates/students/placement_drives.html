@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Placement Drives</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Upcoming Placement Drives</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'show_placement_drives' %}">Show All Drives</a></li>
+                <li><a href="{% url 'apply_for_industry' %}">Apply for Industry</a></li>
+                <li><a href="{% url 'student_profile' %}">Profile</a></li>
+                <li><a href="{% url 'placement_history' %}">Placement History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Upcoming Placement Drives</h2>
+        <!-- List of upcoming placement drives -->
+        <ul>
+            <li>
+                <h3>GOOGLE</h3>
+                <p>Date: 21/12/2024</p>
+                <p>Role: SE</p>
+                <p>Location: BANGALORE</p>
+            </li>
+            <li>No upcoming placement drives.</li>
+        </ul>
+    </main>
+</body>
+</html>

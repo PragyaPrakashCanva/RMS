@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Management</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li><a href="{% url 'drive_add' %}">Add Drive</a></li>
+                <li><a href="{% url 'drive_list' %}">View Drives</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Manage Placement Drives</h2>
+        <!-- Form to add a new placement drive or list of drives with options to edit or delete -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement History</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Placement History</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'placement_drives' %}">Upcoming Drives</a></li>
+                <li><a href="{% url 'show_placement_drives' %}">Show All Drives</a></li>
+                <li><a href="{% url 'apply_for_industry' %}">Apply for Industry</a></li>
+                <li><a href="{% url 'student_profile' %}">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Placement History</h2>
+        <!-- List of placement history -->
+        <ul>
+            <li>
+                <h3>AMERICAN TOURISTER</h3>
+                <p>Date: 7/3/2024</p>
+                <p>Role: BA</p>
+                <p>Status: {{ history.status }}</p>
+            </li>
+            <li>No placement history available.</li>
+        </ul>
+    </main>
+</body>
+</html>

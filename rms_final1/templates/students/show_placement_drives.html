@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Placement Drives</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>All Placement Drives</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'placement_drives' %}">Upcoming Drives</a></li>
+                <li><a href="{% url 'apply_for_industry' %}">Apply for Industry</a></li>
+                <li><a href="{% url 'student_profile' %}">Profile</a></li>
+                <li><a href="{% url 'placement_history' %}">Placement History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>All Placement Drives</h2>
+        <!-- List of all placement drives -->
+        <ul>
+            <li>
+                <h3>{{ drive.company_name }}</h3>
+                <p>Date: {{ drive.date }}</p>
+                <p>Role: {{ drive.job_role }}</p>
+                <p>Location: {{ drive.location }}</p>
+            </li>
+            <li>No placement drives available.</li>
+        </ul>
+    </main>
+</body>
+</html>

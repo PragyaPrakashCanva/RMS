@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Student Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="placement_drives.html">Upcoming Drives</a></li>
+                <li><a href="show_placement_drives.html">Show All Drives</a></li>
+                <li><a href="apply_for_industry.html">Apply for Industry</a></li>
+                <li><a href="placement_history.html">Placement History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Profile Information</h2>
+        <p><strong>Name:</strong> PRAGYA PRAKASH</p>
+        <p><strong>Enrollment:</strong> {{ student.enrollment }}</p>
+        <p><strong>Contact:</strong> {{ student.contact }}</p>
+        <p><strong>Email:</strong> pragyaprakash2002@gmail.com</p>
+        <p><strong>Gender:</strong> Female</p>
+        <p><strong>City:</strong> Waidhan</p>
+        <p><strong>State:</strong> MP</p>
+        <p><strong>10th Grade Percentage:</strong> 92%</p>
+        <p><strong>12th Grade Percentage:</strong> 12%</p>
+        <a href="{% url 'update_profile' %}">Update Profile</a>
+    </main>
+</body>
+</html>
